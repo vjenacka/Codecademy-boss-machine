@@ -34,3 +34,8 @@ if (!module.parent) {
     console.log("Listening on port:" + PORT);
   });
 }
+//error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send(err.message);
+});
