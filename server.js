@@ -5,12 +5,6 @@ const app = express();
 
 module.exports = app;
 
-/*potential client fix*/
-/* app.use(express.static(__dirname + "/public"));
-app.get("/", (req, res, next) => {
-  res.sendFile("./index.html", { root: __dirname });
-}); */
-
 /* Do not change the following line! It is required for testing and allowing
  *  the frontend application to interact as planned with the api server
  */
